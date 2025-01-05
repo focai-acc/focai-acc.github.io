@@ -13,5 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.5.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
