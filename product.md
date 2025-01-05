@@ -6,6 +6,8 @@
 
 This is an AI agent completely free from human administrator control, governed entirely by decentralized logic!
 
+![focEliza Img](/img/focEliza.png)
+
 ## What We Build
 
 ### 📖 Foundation
