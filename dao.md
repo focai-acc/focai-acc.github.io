@@ -61,7 +61,7 @@ Are made through community voting and discussion.
 
 - [GitHub Repository](https://github.com/focai-acc)
 - [Community Discussions](https://github.com/orgs/focai-acc/discussions)
-- [Documentation](https://foceliza.github.io)
+- [Documentation](https://focai-acc.github.io/)
 
 ## Contact
 

@@ -61,7 +61,7 @@ focEliza 致力于成为 focAI 生态系统的公共产品。我们相信构建�
 
 - [GitHub 仓库](https://github.com/focai-acc)
 - [社区讨论](https://github.com/orgs/focai-acc/discussions)
-- [文档](https://foceliza.github.io)
+- [文档](https://focai-acc.github.io/)
 
 ## 联系我们
 

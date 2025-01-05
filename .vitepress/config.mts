@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "focEliza",
   description: "Fully on-chain Eliza",
+  base: '/',
 
   locales: {
     root: {
@@ -21,7 +22,7 @@ export default defineConfig({
           {
             text: 'Resources',
             items: [
-              { text: 'Documentation', link: 'https://foceliza.github.io' },
+              { text: 'Documentation', link: 'https://focai-acc.github.io/' },
               { text: 'GitHub', link: 'https://github.com/focai-acc' }
             ]
           }
@@ -45,7 +46,7 @@ export default defineConfig({
           {
             text: '资源',
             items: [
-              { text: '文档', link: 'https://foceliza.github.io' },
+              { text: '文档', link: 'https://focai-acc.github.io/' },
               { text: 'GitHub', link: 'https://github.com/focai-acc' }
             ]
           }
