@@ -40,14 +40,106 @@ To preview the built documentation, run:
 yarn preview
 ```
 
-## Modifying Files
+## Documentation Structure
 
-- **Content**: Modify the markdown files in the `/` and `/zh` directory.
-- **Navigation**: Update the navigation menu in `.vitepress/config.mts`.
+The documentation is organized in the following structure:
 
-## Adding Navigation and Sidebar
+```
+docs/
+├── collection/           # Product collection
+│   ├── focEliza.md      # Main product overview
+│   └── plugins/         # Plugin documentation
+│       ├── verifiable-log.md
+│       ├── onchain-da.md
+│       └── ...
+├── dev-community/       # Developer community docs
+│   ├── introduction.md
+│   ├── quick-start.md
+│   ├── development-process.md
+│   └── contributing.md
+└── zh/                  # Chinese documentation
+    ├── collection/      # Mirror of English collection
+    └── dev-community/   # Mirror of English dev-community
+```
 
-- **Navigation Menu**: Edit the `themeConfig.nav` in `.vitepress/config.mts`.
-- **Sidebar Menu**: Edit the `themeConfig.sidebar` in `.vitepress/config.mts`.
+When adding new documentation:
+1. Place English documentation in the root directory
+2. Place Chinese documentation in the `/zh` directory
+3. Maintain the same file structure in both directories
+4. Update the navigation menus accordingly
+
+## Configuring Navigation
+
+### Navigation Menu
+
+Edit `.vitepress/config.mts` to update the navigation menu:
+
+```typescript
+// English navigation
+themeConfig: {
+  nav: [
+    {
+      text: 'Collection',
+      link: '/collection/focEliza'
+    },
+    {
+      text: 'Dev Community',
+      link: '/dev-community'
+    }
+  ]
+}
+
+// Chinese navigation
+locales: {
+  zh: {
+    themeConfig: {
+      nav: [
+        {
+          text: '产品集',
+          link: '/zh/collection/focEliza'
+        },
+        {
+          text: '开发者社区',
+          link: '/zh/dev-community'
+        }
+      ]
+    }
+  }
+}
+```
+
+### Sidebar Menu
+
+Configure the sidebar in `.vitepress/config.mts`:
+
+```typescript
+// English sidebar
+sidebar: {
+  '/collection': [
+    {
+      text: 'Overview',
+      items: [
+        { text: 'focEliza', link: '/collection/focEliza' }
+      ]
+    },
+    {
+      text: 'Plugins',
+      items: [
+        { text: 'Verifiable Log', link: '/collection/plugins/verifiable-log' }
+      ]
+    }
+  ]
+}
+
+// Chinese sidebar
+'/zh/collection': [
+  {
+    text: '概述',
+    items: [
+      { text: 'focEliza', link: '/zh/collection/focEliza' }
+    ]
+  }
+]
+```
 
 For more details, refer to the [VitePress documentation](https://vitepress.vuejs.org/).

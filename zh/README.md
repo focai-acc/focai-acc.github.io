@@ -40,14 +40,106 @@ yarn build
 yarn preview
 ```
 
-## 修改文件
+## 文档结构
 
-- **内容**：修改 `/` 和 `/zh` 目录中的 markdown 文件。
-- **导航**：更新 `.vitepress/config.mts` 中的导航菜单。
+文档按以下结构组织：
 
-## 添加导航和侧边栏
+```
+docs/
+├── collection/           # 产品集
+│   ├── focEliza.md      # 主产品概述
+│   └── plugins/         # 插件文档
+│       ├── verifiable-log.md
+│       ├── onchain-da.md
+│       └── ...
+├── dev-community/       # 开发者社区文档
+│   ├── introduction.md
+│   ├── quick-start.md
+│   ├── development-process.md
+│   └── contributing.md
+└── zh/                  # 中文文档
+    ├── collection/      # 对应英文 collection
+    └── dev-community/   # 对应英文 dev-community
+```
 
-- **导航菜单**：编辑 `.vitepress/config.mts` 中的 `themeConfig.nav`。
-- **侧边栏菜单**：编辑 `.vitepress/config.mts` 中的 `themeConfig.sidebar`。
+添加新文档时：
+1. 将英文文档放在根目录
+2. 将中文文档放在 `/zh` 目录
+3. 在两个目录中保持相同的文件结构
+4. 相应地更新导航菜单
+
+## 配置导航
+
+### 导航菜单
+
+编辑 `.vitepress/config.mts` 来更新导航菜单：
+
+```typescript
+// 英文导航
+themeConfig: {
+  nav: [
+    {
+      text: 'Collection',
+      link: '/collection/focEliza'
+    },
+    {
+      text: 'Dev Community',
+      link: '/dev-community'
+    }
+  ]
+}
+
+// 中文导航
+locales: {
+  zh: {
+    themeConfig: {
+      nav: [
+        {
+          text: '产品集',
+          link: '/zh/collection/focEliza'
+        },
+        {
+          text: '开发者社区',
+          link: '/zh/dev-community'
+        }
+      ]
+    }
+  }
+}
+```
+
+### 侧边栏菜单
+
+在 `.vitepress/config.mts` 中配置侧边栏：
+
+```typescript
+// 英文侧边栏
+sidebar: {
+  '/collection': [
+    {
+      text: 'Overview',
+      items: [
+        { text: 'focEliza', link: '/collection/focEliza' }
+      ]
+    },
+    {
+      text: 'Plugins',
+      items: [
+        { text: 'Verifiable Log', link: '/collection/plugins/verifiable-log' }
+      ]
+    }
+  ]
+}
+
+// 中文侧边栏
+'/zh/collection': [
+  {
+    text: '概述',
+    items: [
+      { text: 'focEliza', link: '/zh/collection/focEliza' }
+    ]
+  }
+]
+```
 
 更多详情，请参考 [VitePress 文档](https://vitepress.vuejs.org/)。

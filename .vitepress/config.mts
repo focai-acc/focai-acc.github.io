@@ -12,18 +12,19 @@ export default defineConfig({
       themeConfig: {
         nav: [
           {
-            text: 'Product',
-            link: '/product'
+            text: 'Collection',
+            link: '/collection/focEliza'
           },
           {
-            text: 'DAO',
-            link: '/dao'
+            text: 'Dev Community',
+            link: '/dev-community'
           },
           {
             text: 'Resources',
             items: [
               { text: 'Documentation', link: 'https://focai-acc.github.io/' },
-              { text: 'GitHub', link: 'https://github.com/focai-acc' }
+              { text: 'GitHub', link: 'https://github.com/focai-acc' },
+              { text: 'Discussions', link: 'https://github.com/focai-acc/focEliza/discussions' }
             ]
           }
         ]
@@ -36,12 +37,12 @@ export default defineConfig({
       themeConfig: {
         nav: [
           {
-            text: '产品',
-            link: '/zh/product'
+            text: '产品集',
+            link: '/zh/collection/focEliza'
           },
           {
-            text: 'DAO',
-            link: '/zh/dao'
+            text: '开发者社区',
+            link: '/zh/dev-community'
           },
           {
             text: '资源',
@@ -65,37 +66,73 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/product': [
+      '/collection': [
         {
-          text: 'Introduction',
+          text: 'Overview',
           items: [
-            { text: 'What is focEliza?', link: '/product#overview' },
-            { text: 'Getting Started', link: '/product#getting-started' }
+            { text: 'focEliza', link: '/collection/focEliza' }
           ]
         },
         {
-          text: 'Features',
+          text: 'Plugins',
           items: [
-            { text: 'Runtime Proof', link: '/product#verifiable-runtime-proof' },
-            { text: 'On-Chain Components', link: '/product#on-chain-components' },
-            { text: 'TEE Support', link: '/product#tee-cluster-support' }
+            { text: 'Verifiable Log', link: '/collection/plugins/verifiable-log' },
+            { text: 'On-chain DA', link: '/collection/plugins/onchain-da' },
+            { text: 'GoPlus TEE', link: '/collection/plugins/goplus-tee' },
+            { text: 'BitLife TEE', link: '/collection/plugins/bitlife-tee' },
+            { text: 'Character Dynamic', link: '/collection/plugins/character-dynamic' },
+            { text: 'Character GreenField', link: '/collection/plugins/character-greenfield' }
           ]
         }
       ],
-      '/zh/product': [
+      '/zh/collection': [
         {
-          text: '介绍',
+          text: '概述',
           items: [
-            { text: '什么是 focEliza?', link: '/zh/product#产品概述' },
-            { text: '快速开始', link: '/zh/product#快速开始' }
+            { text: 'focEliza', link: '/zh/collection/focEliza' }
           ]
         },
         {
-          text: '功能特性',
+          text: '插件',
           items: [
-            { text: '运行时证明', link: '/zh/product#可验证运行时证明' },
-            { text: '链上组件', link: '/zh/product#链上组件' },
-            { text: 'TEE 支持', link: '/zh/product#tee-集群支持' }
+            { text: 'Verifiable Log', link: '/zh/collection/plugins/verifiable-log' },
+            { text: 'On-chain DA', link: '/zh/collection/plugins/onchain-da' },
+            { text: 'GoPlus TEE', link: '/zh/collection/plugins/goplus-tee' },
+            { text: 'BitLife TEE', link: '/zh/collection/plugins/bitlife-tee' },
+            { text: 'Character Dynamic', link: '/zh/collection/plugins/character-dynamic' },
+            { text: 'Character GreenField', link: '/zh/collection/plugins/character-greenfield' }
+          ]
+        }
+      ],
+      '/dev-community': [
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Introduction', link: '/dev-community/introduction' },
+            { text: 'Quick Start', link: '/dev-community/quick-start' }
+          ]
+        },
+        {
+          text: 'Development',
+          items: [
+            { text: 'Development Process', link: '/dev-community/development-process' },
+            { text: 'Contributing', link: '/dev-community/contributing' }
+          ]
+        }
+      ],
+      '/zh/dev-community': [
+        {
+          text: '入门',
+          items: [
+            { text: '简介', link: '/zh/dev-community/introduction' },
+            { text: '快速开始', link: '/zh/dev-community/quick-start' }
+          ]
+        },
+        {
+          text: '开发',
+          items: [
+            { text: '开发流程', link: '/zh/dev-community/development-process' },
+            { text: '贡献指南', link: '/zh/dev-community/contributing' }
           ]
         }
       ]
