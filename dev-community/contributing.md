@@ -47,10 +47,9 @@ git checkout -b docs/description
 
 ### 2. Making Changes
 
-1. Follow the [coding standards](./best-practices.md)
-2. Write clear, concise commit messages
-3. Add tests for new features
-4. Update documentation as needed
+1. Write clear, concise commit messages
+2. Add tests for new features
+3. Update documentation as needed
 
 ### 3. Commit Guidelines
 
