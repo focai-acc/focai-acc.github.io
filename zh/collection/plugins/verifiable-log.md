@@ -2,7 +2,13 @@
 
 ## 概述
 
+**plugin-tee-verifiable-log** 已经准备就绪! 很快，每个人都可以通过 Eliza 的 Web 终端远程验证 Eliza 执行的每一个操作。这将允许用户区分由 Eliza 执行的操作和由管理员伪造的操作。
+
 当 Eliza 在 TEE 中运行时，它使用派生的密钥对来签署其操作，确保这些操作确实是由 Eliza 执行的。第三方用户可以远程验证 Eliza 的公钥来验证这些操作。
+
+我们正在努力实现这一目标！
+
+这个想法的灵感来自于 [@shawmakesmagic](https://x.com/shawmakesmagic) [@PhalaNetwork](https://x.com/PhalaNetwork) 的工作！
 
 ## 功能特性
 
