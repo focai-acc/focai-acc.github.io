@@ -12,6 +12,26 @@ To create a thriving ecosystem where developers can:
 - Share knowledge and experiences
 - Create innovative applications
 
+## What We Offer
+
+### Idea to Implementation
+
+Got an idea? We'll help you turn it into reality! From brainstorming to building, focEliza supports you every step of the way:
+
+- **Idea Generation**: Share your vision, and we'll collaborate with you to refine it.
+- **Development Support**: Whether it's integrating TEE, blockchain, or AI components, our team and community provide technical guidance and resources.
+- **Project Listing**: Once your project is ready, focEliza will help you gain visibility by listing it within the community and showcasing it to our ecosystem partners.
+- **Community Contribution**: You'll have the opportunity to contribute back to focEliza and become part of a growing ecosystem shaping the on-chain AI future.
+
+### 1-on-1 Mentorship
+
+Get personalized support through 1-on-1 mentorship with our team of experts. Whether you need guidance on:
+- Building with ElizaOS and on-chain AI frameworks
+- Leveraging existing resources
+- Optimizing smart contract design for your AI agents
+
+We've got you covered.
+
 ## Why Join Us?
 
 ### 🛠️ Build Revolutionary AI Systems
@@ -54,6 +74,25 @@ We welcome developers of all skill levels:
 - Multiple contribution paths
 - Supportive environment
 
+## Community Structure
+
+### Developer Roles
+
+- **Core Developers**: Lead technical development and architecture
+- **Contributors**: Submit code improvements and bug fixes
+- **Documentation Writers**: Improve and maintain documentation
+- **Community Developers**: Build applications and integrations
+
+### Development Process
+
+All development activities including:
+- Feature development
+- Code reviews
+- Documentation updates
+- Testing and QA
+
+Are conducted through open collaboration and peer review.
+
 ## Getting Started
 
 1. **Explore Our Projects**
@@ -89,6 +128,12 @@ We welcome developers of all skill levels:
 - Development environments
 - Testing frameworks
 - Debugging utilities
+
+## Contact
+
+For technical questions or development support:
+- GitHub Discussions: [Join the discussion](https://github.com/orgs/focai-acc/discussions)
+- GitHub Issues: [Report issues](https://github.com/focai-acc/focEliza/issues)
 
 ## Next Steps
 
