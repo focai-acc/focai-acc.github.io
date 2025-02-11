@@ -12,6 +12,10 @@ export default defineConfig({
       themeConfig: {
         nav: [
           {
+            text: 'Docs',
+            link: '/docs/focEliza'
+          },
+          {
             text: 'Collection',
             link: '/collection/focEliza'
           },
@@ -46,6 +50,15 @@ export default defineConfig({
                 { text: 'Future of Crypto', link: '/blog/future-of-crypto-2025' },
                 { text: 'Setting Your Pet Rock Free', link: '/blog/setting-your-pet-rock-free' },
                 { text: 'Interview with Vitalik', link: '/blog/interview-with-vitalik' }
+              ]
+            }
+          ],
+          '/docs/': [
+            {
+              text: 'Overview',
+              items: [
+                { text: 'FocEliza', link: '/docs/focEliza' },
+                { text: 'Smart Action', link: '/docs/smart-action' }
               ]
             }
           ],
