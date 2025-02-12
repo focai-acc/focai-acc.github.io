@@ -77,7 +77,8 @@ export default defineConfig({
                 { text: 'GoPlus TEE', link: '/collection/plugins/goplus-tee' },
                 { text: 'BitLife TEE', link: '/collection/plugins/bitlife-tee' },
                 { text: 'Character Dynamic', link: '/collection/plugins/character-dynamic' },
-                { text: 'Character GreenField', link: '/collection/plugins/character-greenfield' }
+                { text: 'Character GreenField', link: '/collection/plugins/character-greenfield' },
+                { text: 'Smart Action', link: '/collection/plugins/smart-action' }
               ]
             }
           ],
