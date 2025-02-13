@@ -58,7 +58,13 @@ export default defineConfig({
               text: 'Overview',
               items: [
                 { text: 'FocEliza', link: '/docs/focEliza' },
-                { text: 'Smart Action', link: '/docs/smart-action' }
+                {
+                  text: 'Smart Action',
+                  items: [
+                    { text: 'Overview', link: '/docs/smart-action/smart-action' },
+                    { text: 'Quick Start', link: '/docs/smart-action/quick-start' }
+                  ]
+                }
               ]
             }
           ],
@@ -87,8 +93,7 @@ export default defineConfig({
               text: 'Getting Started',
               items: [
                 { text: 'Introduction', link: '/dev-community/introduction' },
-                { text: 'Quick Start', link: '/dev-community/quick-start' },
-                { text: 'Quick Start Smart Action', link: '/dev-community/quick-start-smart-action' }
+                { text: 'Quick Start', link: '/dev-community/quick-start' }
               ]
             },
             {
@@ -155,7 +160,13 @@ export default defineConfig({
               text: '概述',
               items: [
                 { text: 'FocEliza', link: '/zh/docs/focEliza' },
-                { text: 'Smart Action', link: '/zh/docs/smart-action' }
+                {
+                  text: 'Smart Action',
+                  items: [
+                    { text: '概述', link: '/zh/docs/smart-action/smart-action' },
+                    { text: '快速开发指南', link: '/zh/docs/smart-action/quick-start' }
+                  ]
+                }
               ]
             }
           ],
@@ -184,8 +195,7 @@ export default defineConfig({
               text: '入门',
               items: [
                 { text: '简介', link: '/zh/dev-community/introduction' },
-                { text: '快速开始', link: '/zh/dev-community/quick-start' },
-                { text: 'SmartAction快速开发指南', link: '/zh/dev-community/quick-start-smart-action' }
+                { text: '快速开始', link: '/zh/dev-community/quick-start' }
               ]
             },
             {

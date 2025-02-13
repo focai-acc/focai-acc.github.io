@@ -88,5 +88,5 @@ An AI Agent equipped with Smart Action will enable the following use cases:
 
 ## Resources
 
-[Smart Action Plugin](/collection/plugins/smart-action.md)
-[Quick Start Smart Action](/dev-community/quick-start-smart-action.md)
+[Smart Action Plugin](/collection/plugins/smart-action)
+[Quick Start Smart Action](/docs/smart-action/quick-start)
