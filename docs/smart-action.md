@@ -86,3 +86,7 @@ An AI Agent equipped with Smart Action will enable the following use cases:
 3. **Achieving True DeFAI:**  
    The AI Agent can self-custody funds, dynamically deploy DeFAI interaction protocols, and operate in a trustless manner just like a smart contract—all achievable through Smart Action!
 
+## Resources
+
+[Smart Action Plugin](/collection/plugins/smart-action.md)
+[Quick Start Smart Action](/dev-community/quick-start-smart-action.md)

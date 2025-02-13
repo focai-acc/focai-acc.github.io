@@ -77,7 +77,8 @@ export default defineConfig({
                 { text: 'GoPlus TEE', link: '/collection/plugins/goplus-tee' },
                 { text: 'BitLife TEE', link: '/collection/plugins/bitlife-tee' },
                 { text: 'Character Dynamic', link: '/collection/plugins/character-dynamic' },
-                { text: 'Character GreenField', link: '/collection/plugins/character-greenfield' }
+                { text: 'Character GreenField', link: '/collection/plugins/character-greenfield' },
+                { text: 'Smart Action', link: '/collection/plugins/smart-action' }
               ]
             }
           ],
@@ -86,7 +87,8 @@ export default defineConfig({
               text: 'Getting Started',
               items: [
                 { text: 'Introduction', link: '/dev-community/introduction' },
-                { text: 'Quick Start', link: '/dev-community/quick-start' }
+                { text: 'Quick Start', link: '/dev-community/quick-start' },
+                { text: 'Quick Start Smart Action', link: '/dev-community/quick-start-smart-action' }
               ]
             },
             {
@@ -106,6 +108,10 @@ export default defineConfig({
       link: '/zh/',
       themeConfig: {
         nav: [
+          {
+            text: '文档',
+            link: '/zh/docs/focEliza'
+          },
           {
             text: '产品集',
             link: '/zh/collection/focEliza'
@@ -144,6 +150,15 @@ export default defineConfig({
               ]
             }
           ],
+          '/zh/docs/': [
+            {
+              text: '概述',
+              items: [
+                { text: 'FocEliza', link: '/zh/docs/focEliza' },
+                { text: 'Smart Action', link: '/zh/docs/smart-action' }
+              ]
+            }
+          ],
           '/zh/collection/': [
             {
               text: '概述',
@@ -159,7 +174,8 @@ export default defineConfig({
                 { text: 'GoPlus TEE', link: '/zh/collection/plugins/goplus-tee' },
                 { text: 'BitLife TEE', link: '/zh/collection/plugins/bitlife-tee' },
                 { text: 'Character Dynamic', link: '/zh/collection/plugins/character-dynamic' },
-                { text: 'Character GreenField', link: '/zh/collection/plugins/character-greenfield' }
+                { text: 'Character GreenField', link: '/zh/collection/plugins/character-greenfield' },
+                { text: 'Smart Action', link: '/zh/collection/plugins/smart-action' }
               ]
             }
           ],
@@ -168,7 +184,8 @@ export default defineConfig({
               text: '入门',
               items: [
                 { text: '简介', link: '/zh/dev-community/introduction' },
-                { text: '快速开始', link: '/zh/dev-community/quick-start' }
+                { text: '快速开始', link: '/zh/dev-community/quick-start' },
+                { text: 'SmartAction快速开发指南', link: '/zh/dev-community/quick-start-smart-action' }
               ]
             },
             {
