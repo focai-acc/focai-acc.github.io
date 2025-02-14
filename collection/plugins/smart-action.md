@@ -60,5 +60,5 @@ All user state data that has been updated is stored in the `states` array, makin
 ## Resources
 
 - [Quick Start Smart Action](/docs/smart-action/quick-start)
-- [Smart Action GitHub Repository](https://github.com/focai-acc/focEliza/tree/main/packages/plugin-smart-action)
+- [Smart Action GitHub Repository](https://github.com/focai-acc/focEliza/tree/develop/packages/plugin-smart-action)
 - [On-chain State Service Documentation](/blog/onchain-state)
