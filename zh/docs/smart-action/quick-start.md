@@ -27,7 +27,7 @@ Smart Action 是 ElizaOS 的一个插件，灵感来源于区块链智能合约�
 - **状态描述**：使用纯英文描述业务逻辑，该描述会被直接转换为状态转换流程。
 - **自动生成**：内部的 ```generateObject``` 方法根据预定义的 JSON 模式（利用 Zod 进行验证）解析自然语言描述，从而生成新的状态对象。
 - **上下文组合**：在生成状态之前，```composeSmartActionContext``` 方法会构建一个完整的提示，其中包含当前状态、角色信息和对话上下文，确保生成的逻辑与业务场景相匹配。  
-  (参见 [composeSmartActionContext 源码](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-smart-action/src/lib/index.ts)).
+  (参见 [composeSmartActionContext 源码](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-smart-action/src/lib/index.ts)).
 
 ### 2.3 服务实现
 
@@ -35,7 +35,7 @@ Smart Action 是 ElizaOS 的一个插件，灵感来源于区块链智能合约�
 
 - **getInstance()**：返回服务实例。
 - **generateObject(...)**：接收当前状态、自然语言提示、模型类型等参数，组合完整上下文后调用核心生成逻辑并返回结果。  
-  (参见 [SmartActionService 源码](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-smart-action/src/index.ts)).
+  (参见 [SmartActionService 源码](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-smart-action/src/index.ts)).
 
 ---
 
@@ -113,7 +113,7 @@ const result: SmartActionResult = await smartActionService.generateObject(
 ```
 
 上述代码将当前状态与自然语言提示组合在一起，生成符合预定义 JSON 模式的状态更新结果。开发者可根据此结果继续处理相应的业务逻辑。  
-(参见 [身份认证示例](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-foc-auth/src/actions/identityAuth.ts)).
+(参见 [身份认证示例](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-foc-auth/src/actions/identityAuth.ts)).
 
 ### 3.5 理解 SmartActionResult
 
@@ -145,14 +145,14 @@ interface SmartActionResult {
 3. **调用 SmartActionService**：生成更新后的状态对象并将其存储到链上状态存储中。
 
 详细的工作流程和代码示例请参见身份认证提供者的实现。  
-(参见 [identityAuth.ts](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-foc-auth/src/providers/identityAuth.ts)).
+(参见 [identityAuth.ts](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-foc-auth/src/providers/identityAuth.ts)).
 
 ---
 
 ## 5. 参考资料
 
 - [Smart Action 插件](/zh/collection/plugins/smart-action.md)
-- [Smart Action GitHub 仓库](https://github.com/focai-acc/focEliza/tree/main/packages/plugin-smart-action)
+- [Smart Action GitHub 仓库](https://github.com/focai-acc/focEliza/tree/develop/packages/plugin-smart-action)
 - [Onchain State](/zh/blog/onchain-state.md)
 
 ---

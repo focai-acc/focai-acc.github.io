@@ -88,5 +88,5 @@ Smart Action 的核心在于设计一个 **状态转换提示**。
 
 ## Resources
 
-[Smart Action插件](/zh/collection/plugins/smart-action.md)  
-[Smart Action快速开发指南](/zh/dev-community/quick-start-smart-action.md)
+- [Smart Action插件](/zh/collection/plugins/smart-action)  
+- [Smart Action快速开发指南](/zh/docs/smart-action/quick-start)

@@ -27,7 +27,7 @@ Smart Action is a plugin for ElizaOS inspired by blockchain smart contracts. It 
 - **State Description**: Use plain text to describe the business logic, which is directly transformed into a state transition process.
 - **Automatic Generation**: The internal ```generateObject``` method parses the natural language description against a predefined JSON schema (using Zod for validation) to generate a new state object.
 - **Context Composition**: Before generating the state, the ```composeSmartActionContext``` method builds a complete prompt including the current state, role information, and conversation context to ensure the generated logic aligns with the business scenario.  
-  (Refer to the [composeSmartActionContext](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-smart-action/src/lib/index.ts)).
+  (Refer to the [composeSmartActionContext](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-smart-action/src/lib/index.ts)).
 
 ### 2.3 Service Implementation
 
@@ -35,7 +35,7 @@ The core service, ```SmartActionService```, is implemented in ```plugin-smart-ac
 
 - **getInstance()**: Returns the service instance.
 - **generateObject(...)**: Accepts the current state, natural language prompt, model type, and other parameters, composes the complete context, and then invokes the core generation logic to produce the result.  
-  (See the [SmartActionService](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-smart-action/src/index.ts)).
+  (See the [SmartActionService](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-smart-action/src/index.ts)).
 
 ---
 
@@ -107,7 +107,7 @@ const result: SmartActionResult = await smartActionService.generateObject(
 ```
 
 The above code composes the current state and natural language prompt to generate a state update result conforming to the predefined JSON schema. Developers can then use this result to proceed with the necessary business logic.  
-(Refer to the [identity authentication example](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-foc-auth/src/actions/identityAuth.ts)).
+(Refer to the [identity authentication example](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-foc-auth/src/actions/identityAuth.ts)).
 
 ### 3.5 Understanding SmartActionResult
 
@@ -139,14 +139,14 @@ In an identity authentication plugin (e.g., ```plugin-foc-auth```), developers u
 3. **Invoke SmartActionService**: Generate the updated state object and store it in the on-chain state storage.
 
 Detailed workflow and code examples can be found in the identity authentication provider implementation.  
-(See [identityAuth.ts](https://github.com/focai-acc/focEliza/blob/main/packages/plugin-foc-auth/src/providers/identityAuth.ts)).
+(See [identityAuth.ts](https://github.com/focai-acc/focEliza/blob/develop/packages/plugin-foc-auth/src/providers/identityAuth.ts)).
 
 ---
 
 ## 5. References
 
 - [Smart Action Plugin](/collection/plugins/smart-action.md)
-- [Smart Action GitHub Repository](https://github.com/focai-acc/focEliza/tree/main/packages/plugin-smart-action)
+- [Smart Action GitHub Repository](https://github.com/focai-acc/focEliza/tree/develop/packages/plugin-smart-action)
 - [On-chain State Service Documentation](/blog/onchain-state.md)
 
 ---

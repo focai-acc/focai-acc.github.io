@@ -59,6 +59,6 @@ interface SmartActionResult {
 
 ## 资源
 
-- [Smart Action快速开发指南](/zh/dev-community/quick-start-smart-action.md)
-- [Smart Action GitHub 仓库](https://github.com/focai-acc/focEliza/tree/main/packages/plugin-smart-action)
+- [Smart Action快速开发指南](/zh/docs/smart-action/quick-start)
+- [Smart Action GitHub 仓库](https://github.com/focai-acc/focEliza/tree/develop/packages/plugin-smart-action)
 - [On-chain State Service 文档](/zh/blog/onchain-state.md)
